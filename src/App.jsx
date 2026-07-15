@@ -1,5 +1,6 @@
-import Navbar from "./components/Navbar";
-import Hero from "./pages/Hero";
+// import Navbar from "./components/Navbar";
+import Navbarr from "./components/Navbar";
+import Hero from "./pages/hero"
 import { About } from "./pages/about";
 import Projects from "./pages/projects";
 import Contact from "./pages/contacts";
@@ -30,7 +31,7 @@ const user = JSON.parse(localStorage.getItem("user"));
 
   return (
     <>
-      <Navbar />
+      <Navbarr />
       <Hero />
       <About />
       <Skills />

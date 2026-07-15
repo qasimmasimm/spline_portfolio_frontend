@@ -1,4 +1,4 @@
-export default function Navbar() {
+export default function Navbarr() {
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
