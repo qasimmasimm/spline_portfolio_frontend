@@ -19,7 +19,7 @@
         try {
         const response = await fetch(`${apiurl}/projects`);
           const data = await response.json();
-f
+
           setProject(data);
         } catch (err) {
           console.log(err);
