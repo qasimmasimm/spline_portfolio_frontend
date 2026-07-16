@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 const getImageUrl = (imagePath) => {
   if (!imagePath) return "";
   const cleanPath = imagePath.replace(/\\/g, "/");
-  return `https://spline-portfolio-backend.vercel.app/${cleanPath}`;
+  return `http://localhost:8080/${cleanPath}`;
 };
 
 export default function Projects() {

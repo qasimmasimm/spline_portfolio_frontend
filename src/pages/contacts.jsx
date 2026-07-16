@@ -40,7 +40,7 @@ export default function ContactUI() {
 
   const onSubmit = async (data) => {
     try {
-      const res = await fetch("https://spline-portfolio-backend.vercel.app/contact", {
+      const res = await fetch("http://localhost:8080/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -14,7 +14,7 @@
     useEffect(() => {
       const fetchProject = async () => {
         try {
-          const response = await fetch(`${API_URL}/projects`);
+          const response = await fetch(`http://localhost:8080/projects`);
           const data = await response.json();
 
           setProject(data);

@@ -35,7 +35,7 @@ function Projinfo({ proj }) {
           {proj?.image && (
             <img
               className="pd-hero-img"
-              src={`https://spline-portfolio-backend.vercel.app/${proj.image}`}
+              src={`http://localhost:8080/${proj.image}`}
               alt={proj?.name}
             />
           )}

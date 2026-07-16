@@ -36,7 +36,7 @@ const onSubmit = async (data) => {
         formData.append("img", data.image[0]);
       }
 
-      const res = await fetch("https://spline-portfolio-backend.vercel.app/projects", {
+      const res = await fetch("http://localhost:8080/projects", {
         method: "POST",
         body: formData,
       });

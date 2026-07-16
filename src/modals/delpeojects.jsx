@@ -20,7 +20,7 @@ export default function Delprojects({proj}) {
 
   const handleDelete = async() => {
     const res = await fetch(
-    `https://spline-portfolio-backend.vercel.app/projects/${proj._id}`,
+    `http://localhost:8080/${proj._id}`,
     { method: "DELETE" }
   ); 
 
