@@ -8,11 +8,12 @@ import EditProjects from "../modals/editprojects";
 import Projinfo from "../modals/projectsinfo";
 
 gsap.registerPlugin(ScrollTrigger);
+        const apiurl=import.meta.env.VITE_API_URL;
 
 const getImageUrl = (imagePath) => {
   if (!imagePath) return "";
   const cleanPath = imagePath.replace(/\\/g, "/");
-  return `http://localhost:8080/${cleanPath}`;
+  return `${apiurl}/${cleanPath}`;
 };
 
 export default function Projects() {

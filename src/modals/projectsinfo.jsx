@@ -8,6 +8,8 @@ function Projinfo({ proj }) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+          const apiurl=import.meta.env.VITE_API_URL;
+
 // console.log(proj)
   const solutionText = proj?.solutions ?? proj?.solution;
 
@@ -32,10 +34,11 @@ function Projinfo({ proj }) {
 
         {/* Hero */}
         <div className="pd-hero">
+          
           {proj?.image && (
             <img
               className="pd-hero-img"
-              src={`http://localhost:8080/${proj.image}`}
+              src={`${apiurl}/${proj.image}`}
               alt={proj?.name}
             />
           )}

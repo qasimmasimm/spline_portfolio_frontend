@@ -19,8 +19,9 @@ export default function Delprojects({proj}) {
   const handleShow = () => setShow(true);
 
   const handleDelete = async() => {
+        const apiurl=import.meta.env.VITE_API_URL;
     const res = await fetch(
-    `http://localhost:8080/${proj._id}`,
+    `${apiurl}/${proj._id}`,
     { method: "DELETE" }
   ); 
 

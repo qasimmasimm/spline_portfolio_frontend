@@ -10,6 +10,7 @@ import { ProjectContext } from "../context/projectcontext";
 
 function AddProject() {
 
+
     const {projects,setProject}=useContext(ProjectContext)
   const [show, setShow] = useState(false);
 
@@ -35,8 +36,10 @@ const onSubmit = async (data) => {
       if (data.image?.[0]) {
         formData.append("img", data.image[0]);
       }
+          const apiurl=import.meta.env.VITE_API_URL;
 
-      const res = await fetch("http://localhost:8080/projects", {
+
+      const res = await fetch(`${apiurl}/projects`, {
         method: "POST",
         body: formData,
       });

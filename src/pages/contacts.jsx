@@ -40,7 +40,8 @@ export default function ContactUI() {
 
   const onSubmit = async (data) => {
     try {
-      const res = await fetch("http://localhost:8080/contact", {
+              const apiurl=import.meta.env.VITE_API_URL;
+      const res = await fetch(`${apiurl}/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
