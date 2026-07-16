@@ -41,7 +41,7 @@ function EditProjects({proj}) {
       }
 
       const res = await fetch(
-      `http://localhost:8080/projects/${proj._id}`,
+      `https://spline-portfolio-backend.vercel.app/projects/${proj._id}`,
       {
         method: "PUT",
         body: formData,

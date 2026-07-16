@@ -11,7 +11,7 @@ export default function ProjectProvider({ children }) {
   useEffect(() => {
     const fetchProject = async () => {
       try {
-        const response = await fetch("http://localhost:8080/projects");
+        const response = await fetch("https://spline-portfolio-backend.vercel.app/projects");
         const data = await response.json();
 
         setProject(data);
