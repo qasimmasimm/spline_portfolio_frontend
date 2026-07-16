@@ -9,6 +9,7 @@
     
 
     const apiurl=import.meta.env.VITE_API_URL;
+    console.log(apiurl)
 
     console.log(apiurl)
     const [projects, setProject] = useState([]);
@@ -16,9 +17,9 @@
     useEffect(() => {
       const fetchProject = async () => {
         try {
-          const response = await fetch(`${apiurl}/projects`);
+        const response = await fetch(`${apiurl}/projects`);
           const data = await response.json();
-
+f
           setProject(data);
         } catch (err) {
           console.log(err);
